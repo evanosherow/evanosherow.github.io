@@ -1,0 +1,139 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #d2d2d2;
+}
+
+.outer_face {
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/BlueDial.png) no-repeat center;
+  background-size: contain;
+}
+
+.inner_face {
+  position: relative;
+  width: 88%;
+  height: 88%;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  z-index: 1000;
+  left: 6%;
+  top: 6%
+}
+
+#date-text {
+  font-family: 'Droid Sans Mono', serif;
+  color: #fff;
+  font-size: 34px;
+  text-align: right;
+  position: absolute;
+  width: 75px;
+  top: 101px;
+  left: 228px;
+  letter-spacing: 12px;
+  text-shadow: 0 2px 1px rgba(0,0,0,1);
+}
+
+.hand,
+.hand.hour {
+  position: absolute;
+  height: 164px;
+  width: 35px;
+  top: 98px;
+  left: 249px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/HourHand.png) no-repeat;
+  background-size: contain;
+  margin-left: -2px;
+  transform-origin: 17px 166px;
+  z-index: 2;
+}
+
+.hand.minute {
+  height: 220px;
+  width: 30px;
+  top: 48px;
+  left: 251px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/MinuteHand.png) no-repeat center;
+  background-size: contain;
+  transform-origin: 50% 216px;
+  z-index: 3;
+}
+
+.hand.second {
+  height: 17px;
+  width: 120px;
+  top: 369px;
+  left: 261px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/SubSecondsHand.png) no-repeat;
+  background-size: contain;
+  transform-origin: 6px 51%;
+  z-index: 0;
+}
+
+.hand.month,
+.hand.day, 
+.hand.date {
+  height: 50px;
+  width: 20px;
+  top: 66%;
+  left: 48.4%;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/SubdialHand.png) no-repeat;
+  background-size: contain;
+  transform-origin: 40% 87%;
+  z-index: -1;
+}
+
+.hand.day {
+  top: 41.7%;
+  left: 28.7%;
+}
+
+.hand.month {
+  top: 41.7%;
+  left: 68.7%;
+}
+
+.moon {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/BlueMoonWindow.png) no-repeat;
+  width: 135px;
+  height: 135px;
+  background-size: contain;
+  position: relative;
+  top: 311px;
+  left: 197px;
+  z-index:-1;
+}
+
+.moondisc {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/25305/BlueMoonDisc.png) no-repeat;
+  background-size: cover;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  top: 178px;
+  left: 200px;
+  z-index: -2;
+}
+
+#links {
+  text-align: center;
+}
+
+#links a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #999;
+}
+
+#links a:hover {
+  color: #4d4d4d;
+}

@@ -1,0 +1,267 @@
+/* line 1, styles.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 5, styles.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #fff; }
+
+/* line 11, styles.scss */
+body {
+  background: #1EC893; }
+
+/* line 17, styles.scss */
+a {
+  text-decoration: none; }
+
+/* line 22, styles.scss */
+header p {
+  padding: 0 10px;
+  margin-top: 0;
+  max-width: 600px; }
+
+/* line 30, styles.scss */
+.home header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0; }
+/* line 37, styles.scss */
+.home h1 {
+  margin: 0;
+  padding: 0 0 0 10px; }
+
+/* line 43, styles.scss */
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 0 10px;
+  position: relative;
+  display: inline-block; }
+  /* line 50, styles.scss */
+  h1 a {
+    color: #fff; }
+    /* line 54, styles.scss */
+    h1 a:hover span {
+      opacity: 1; }
+  /* line 60, styles.scss */
+  h1 span {
+    opacity: .7;
+    transition: all 0.5s ease; }
+  /* line 67, styles.scss */
+  h1:hover .drop, h1:active .drop {
+    height: 220px;
+    transition: all 0.5s ease; }
+  /* line 73, styles.scss */
+  h1 .drop {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    transition: all 0.5s ease; }
+    /* line 83, styles.scss */
+    h1 .drop ul {
+      font-size: 12px;
+      padding: 4px 0;
+      background: #1EC893;
+      width: 100%; }
+      /* line 89, styles.scss */
+      h1 .drop ul li {
+        list-style: none;
+        padding: 0; }
+        /* line 93, styles.scss */
+        h1 .drop ul li a {
+          display: block;
+          padding: 4px 10px;
+          opacity: .7; }
+          /* line 98, styles.scss */
+          h1 .drop ul li a.active, h1 .drop ul li a:hover {
+            opacity: 1; }
+
+/* line 108, styles.scss */
+.container,
+.content {
+  background: #1B9470; }
+
+/* line 113, styles.scss */
+.container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  /* line 119, styles.scss */
+  .container a {
+    flex-basis: 300px;
+    margin: 0 20px; }
+
+/* line 125, styles.scss */
+section {
+  max-height: 400px;
+  min-height: 200px;
+  height: 300px;
+  max-width: 1000px;
+  background-size: cover;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  /* line 141, styles.scss */
+  section:hover p {
+    opacity: 1; }
+  /* line 145, styles.scss */
+  section:hover h2 {
+    color: tomato; }
+  /* line 150, styles.scss */
+  section h2 {
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 5px 0;
+    transition: all 0.5s ease; }
+  /* line 157, styles.scss */
+  section p {
+    margin: 0;
+    opacity: .5;
+    transition: all 0.5s ease; }
+  /* line 163, styles.scss */
+  section.infinity-reporting {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/inf-rep-2-1.png"); }
+  /* line 167, styles.scss */
+  section.optimize {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/opt-4.png"); }
+  /* line 171, styles.scss */
+  section.segments {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/seg-2.png"); }
+  /* line 175, styles.scss */
+  section.personas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/persona-1.png"); }
+  /* line 179, styles.scss */
+  section.streams {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/streams-4.png"); }
+  /* line 183, styles.scss */
+  section.ana {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/ana-1.png"); }
+  /* line 187, styles.scss */
+  section.time {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("images/time-1.jpg"); }
+
+/* line 192, styles.scss */
+h3 {
+  font-size: 18px; }
+
+/* line 196, styles.scss */
+h4 {
+  opacity: .7;
+  font-size: 14px; }
+
+/* line 201, styles.scss */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  /* line 206, styles.scss */
+  .content .images {
+    flex-basis: 60%;
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 20px; }
+    /* line 213, styles.scss */
+    .content .images figure {
+      margin: 0 0 30px 0; }
+    /* line 217, styles.scss */
+    .content .images figcaption {
+      margin-top: 10px;
+      opacity: .7; }
+    /* line 222, styles.scss */
+    .content .images img {
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  /* line 228, styles.scss */
+  .content .text {
+    flex-basis: 40%;
+    max-width: 400px;
+    padding-right: 15px;
+    margin-bottom: 30px; }
+    /* line 234, styles.scss */
+    .content .text a {
+      font-weight: 400;
+      text-decoration: underline;
+      color: #fff;
+      opacity: .7; }
+      /* line 241, styles.scss */
+      .content .text a:hover {
+        opacity: 1;
+        transition: all 0.5s ease; }
+    /* line 247, styles.scss */
+    .content .text ol {
+      margin: 0;
+      padding-left: 20px; }
+      /* line 251, styles.scss */
+      .content .text ol li {
+        margin-bottom: 10px; }
+
+/* line 259, styles.scss */
+.time .images {
+  max-width: 400px; }
+
+@media (max-width: 700px) {
+  /* line 266, styles.scss */
+  h1 .drop {
+    display: none;
+    height: auto;
+    overflow: auto; }
+    /* line 271, styles.scss */
+    h1 .drop ul {
+      font-size: .5em; }
+  /* line 276, styles.scss */
+  h1:hover .drop {
+    display: block;
+    height: auto; }
+
+  /* line 282, styles.scss */
+  .container {
+    flex-direction: column;
+    justify-content: center; }
+    /* line 286, styles.scss */
+    .container a {
+      width: 100%;
+      margin: 0 0 20px 0; }
+    /* line 291, styles.scss */
+    .container section {
+      margin-bottom: 20px; }
+
+  /* line 297, styles.scss */
+  figcaption {
+    margin-right: 5px;
+    margin-left: 5px; }
+
+  /* line 302, styles.scss */
+  .content {
+    flex-direction: column-reverse; }
+    /* line 305, styles.scss */
+    .content .images,
+    .content .text {
+      flex-basis: auto;
+      -webkit-flex-basis: unset;
+      max-width: none; }
+    /* line 312, styles.scss */
+    .content .images {
+      padding: 0; }
+
+  /* line 316, styles.scss */
+  .text {
+    padding-left: 15px; }
+
+  /* line 321, styles.scss */
+  .time .images {
+    max-width: 400px;
+    margin: auto; } }
